@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import Button from './Components/Button/Button';
-import client from './js/client';
+import audioStreamer from './js/AudioStreamer';
 
-client();
+setTimeout(() => audioStreamer.initRecording(), 3 * 1000);
+// audioStreamer.initRecording()
+// setTimeout(() => audioStreamer.stopRecording(), 10 * 1000);
 
 const Container = styled.div`
   width: 100%;
@@ -21,10 +23,10 @@ function App() {
   return (
     // пробовал добавить запуск/остановку по нажатию, на данный момент не смог, пока просто висит интерфейс
     <Container className="container">
-      <Buttons> 
+      {/* <Buttons> 
         <Button value={'Начать запись'} />
         <Button value={'Остановить запись'} />
-      </Buttons>
+      </Buttons> */}
     </Container>    
   );
 }
