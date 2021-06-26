@@ -31,7 +31,7 @@ let audioStreamer = {
         encoding: 'LINEAR16',
         sampleRateHertz: 16000,
         // Here you can change language
-        languageCode: 'ru-RU',
+        languageCode: 'en-US',
         profanityFilter: false,
         enableWordTimeOffsets: true // Here I add 99.9% correct results, but results are NOT real-time,
         // I can see them only after end of my speech
